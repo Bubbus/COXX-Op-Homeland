@@ -1,3 +1,6 @@
+// BUB - just weld shit to shit
+// bub_fnc_attachKeepOrient = compileFinal preprocessFileLineNumbers "bub\bub_fnc_attachKeepOrient.sqf";
+
 // ====================================================================================
 
 // F3 - Disable Saving and Auto Saving

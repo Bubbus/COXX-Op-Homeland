@@ -535,6 +535,10 @@ class CfgFunctions
 			{
 				file = "bub\bub_fnc_makeExplosion.sqf";
 			}
+			class addSvbiedHandlers
+			{
+				file = "bub\bub_fnc_addSvbiedHandlers.sqf";
+			}
 		}
 	}
 };

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5179.5308,161.18637,6174.4829};
-		dir[]={-0.18602103,-0.58874792,-0.78668332};
-		up[]={-0.13548452,0.80831778,-0.57295853};
-		aside[]={-0.97321242,-4.6612695e-007,0.23012714};
+		pos[]={5143.0776,149.55869,6121.6167};
+		dir[]={-0.86611748,-0.31946003,-0.38470709};
+		up[]={-0.29201815,0.94759226,-0.12970576};
+		aside[]={-0.4059751,-1.717126e-007,0.9140023};
 	};
 };
 binarizationWanted=0;
@@ -70,16 +70,13 @@ addons[]=
 	"ace_interaction",
 	"ace_cargo",
 	"ace_dragging",
-	"A3_Structures_F_Orange_Signs_Mines",
-	"A3_Weapons_F_Explosives",
-	"A3_Modules_F_Curator_Mines",
-	"A3_Weapons_F_Orange_Explosives"
+	"A3_Structures_F_Orange_Signs_Mines"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=37;
+		items=36;
 		class Item0
 		{
 			className="A3_Armor_F_Gamma";
@@ -324,13 +321,6 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
-		{
-			className="A3_Weapons_F_Orange";
-			name="Arma 3 Orange - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
 	};
 };
 randomSeed=1116085;
@@ -397,7 +387,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=166;
+		items=159;
 		class Item0
 		{
 			dataType="Object";
@@ -16756,8 +16746,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5138.356,148.08783,6119.897};
-				angles[]={5.1196094,3.1415927,0};
+				position[]={5138.356,148.05124,6120.042};
+				angles[]={4.9951115,3.1416166,-0};
 			};
 			side="Empty";
 			flags=1;
@@ -16767,7 +16757,7 @@ class Mission
 			};
 			id=1597;
 			type="Land_SlumWall_01_s_2m_F";
-			atlOffset=1.6289978;
+			atlOffset=1.5896149;
 		};
 		class Item135
 		{
@@ -16882,7 +16872,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5138.3311,148.1311,6120.7021};
+				position[]={5138.3311,148.07706,6120.79};
 				angles[]={4.5669684,0,0};
 			};
 			side="Empty";
@@ -16893,7 +16883,7 @@ class Mission
 			};
 			id=1603;
 			type="Land_SlumWall_01_s_2m_F";
-			atlOffset=1.6560059;
+			atlOffset=1.6002808;
 		};
 		class Item141
 		{
@@ -17092,8 +17082,8 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[this, insurgent_svbied_1] call bub_fnc_attachKeepOrient;}";
-				disableSimulation=1;
+				init="call{[this, insurgent_svbied_1] call bub_fnc_attachKeepOrient;" \n "this addEventHandler " \n "[ " \n """HitPart"", " \n "{ " \n "    _unit = (_this select 0) select 0; " \n "    _unit removeAllEventHandlers ""HitPart"";" \n "    _pos = (getPos _unit) vectorAdd [0,0,1];" \n "    [_pos] call bub_fnc_makeExplosion;" \n "    insurgent_svbied_1 setDamage 1;" \n "} " \n "];}";
+				name="testybarrels";
 			};
 			id=1624;
 			type="CargoNet_01_barrels_F";
@@ -17231,122 +17221,6 @@ class Mission
 			atlOffset=0.99899292;
 		};
 		class Item158
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5170.3945,145.68387,6151.856};
-				angles[]={6.1970005,0,0.017602073};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1642;
-			type="Claymore_F";
-			atlOffset=-2.7476349;
-		};
-		class Item159
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5179.9258,145.90646,6140.3989};
-				angles[]={6.1906505,0,6.2097163};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1643;
-			type="SatchelCharge_F";
-			atlOffset=-3.0517578e-005;
-		};
-		class Item160
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5162.3262,145.62482,6130.6924};
-				angles[]={6.2480001,0,6.2575908};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1644;
-			type="DemoCharge_F";
-		};
-		class Item161
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5126.1016,146.74655,6115.8687};
-				angles[]={-0,0,6.2256494};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1645;
-			type="IEDLandBig_F";
-			atlOffset=-1.5258789e-005;
-		};
-		class Item162
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5105.481,147.93315,6118.3252};
-				angles[]={6.2543902,0,6.2304335};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1646;
-			type="IEDUrbanBig_F";
-		};
-		class Item163
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5080.9336,148.27112,6118.2563};
-				angles[]={6.2288399,0,0.004796607};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1649;
-			type="UnderwaterMineAB";
-		};
-		class Item164
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5053.0444,148.97827,6116.4712};
-				angles[]={6.2304335,0,6.2432065};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1651;
-			type="BombCluster_01_UXO2_F";
-			atlOffset=4.5776367e-005;
-		};
-		class Item165
 		{
 			dataType="Group";
 			side="West";

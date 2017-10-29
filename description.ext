@@ -531,6 +531,10 @@ class CfgFunctions
 			{
 				file = "bub\bub_fnc_attachKeepOrient.sqf";
 			}
+			class makeExplosion
+			{
+				file = "bub\bub_fnc_makeExplosion.sqf";
+			}
 		}
 	}
 };

@@ -21,6 +21,8 @@ if(count _this > 2) then
   _faction = toLower (_this select 2);
 };
 
+//diag_log format ["DEBUG (assignGear.sqf): %1, %2, %3", _typeofUnit, _unit, _faction];
+
 // ====================================================================================
 
 // INSIGNIA

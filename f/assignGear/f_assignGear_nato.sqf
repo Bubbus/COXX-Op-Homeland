@@ -426,6 +426,248 @@ switch (_typeofUnit) do
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
+
+	case "tac-at":
+	{
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
+
+		_unit forceAddUniform "Cre8ive_CU_Uniform_Polo_Grey";
+		_unit addItemToUniform "ACRE_PRC152";
+		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addVest "rhsusf_mbav_medic";
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 8 do {_unit addItemToVest "hlc_30rnd_556x45_EPR";};
+		for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30rnd_556x45_MDim";};
+		for "_i" from 1 to 6 do {_unit addItemToVest "UK3CB_BAF_SmokeShell";};
+		_unit addBackpack "rhsusf_assault_eagleaiii_ocp";
+		_unit addHeadgear "H_Bandanna_gry";
+		_unit addGoggles "rhs_googles_orange";
+
+		_unit addWeapon "rhs_weap_m4a1_blockII_d";
+		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		_unit addWeapon "rhs_weap_rpg7";
+		_unit addSecondaryWeaponItem "rhs_acc_pgo7v3";
+
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "tac-med":
+	{
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
+
+		_unit forceAddUniform "Cre8ive_CU_Uniform_TShirt_Tan_Grey";
+		_unit addItemToUniform "ACRE_PRC152";
+		for "_i" from 1 to 12 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addVest "rhsusf_mbav_medic";
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 9 do {_unit addItemToVest "hlc_30rnd_556x45_EPR";};
+		for "_i" from 1 to 4 do {_unit addItemToVest "hlc_30rnd_556x45_MDim";};
+		for "_i" from 1 to 3 do {_unit addItemToVest "16Rnd_9x21_Mag";};
+		for "_i" from 1 to 6 do {_unit addItemToVest "UK3CB_BAF_SmokeShell";};
+		_unit addBackpack "rhsusf_assault_eagleaiii_ocp";
+		for "_i" from 1 to 30 do {_unit addItemToBackpack "ACE_fieldDressing";};
+		for "_i" from 1 to 8 do {_unit addItemToBackpack "ACE_bloodIV";};
+		for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_epinephrine";};
+		for "_i" from 1 to 30 do {_unit addItemToBackpack "ACE_morphine";};
+		_unit addHeadgear "H_Cap_red";
+		_unit addGoggles "rhs_googles_orange";
+
+		_unit addWeapon "rhs_weap_m4a1_blockII_d";
+		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		_unit addWeapon "hgun_P07_F";
+
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "tac-sl":
+	{
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
+
+		_unit forceAddUniform "Cre8ive_CU_Uniform_TShirt_Tan_Grey";
+		_unit addItemToUniform "ACRE_PRC152";
+		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addItemToUniform "ACE_bloodIV_250";
+		_unit addVest "rhsusf_mbav_grenadier";
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 11 do {_unit addItemToVest "hlc_30rnd_556x45_EPR";};
+		for "_i" from 1 to 5 do {_unit addItemToVest "hlc_30rnd_556x45_MDim";};
+		_unit addItemToVest "Laserbatteries";
+		_unit addBackpack "rhsusf_falconii_mc";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "16Rnd_9x21_Mag";};
+		_unit addItemToBackpack "Laserbatteries";
+		for "_i" from 1 to 8 do {_unit addItemToBackpack "rhs_mag_M441_HE";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_m662_red";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "1Rnd_SmokeGreen_Grenade_shell";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
+		_unit addHeadgear "H_Bandanna_khk_hs";
+		_unit addGoggles "rhs_googles_black";
+
+		_unit addWeapon "rhs_weap_m4a1_blockII_M203_d";
+		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
+		_unit addWeapon "hgun_P07_F";
+		_unit addHandgunItem "hlc_muzzle_Evo9";
+		_unit addWeapon "Laserdesignator";
+
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "tac-ar":
+	{
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
+
+		_unit forceAddUniform "Cre8ive_CU_Uniform_TShirt_Tan_Blue";
+		_unit addItemToUniform "ACRE_PRC152";
+		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addItemToUniform "ACE_bloodIV_250";
+		_unit addVest "rhsusf_mbav_mg";
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
+		_unit addItemToVest "rhs_200rnd_556x45_M_SAW";
+		_unit addItemToVest "rhs_200rnd_556x45_T_SAW";
+		for "_i" from 1 to 4 do {_unit addItemToVest "SmokeShell";};
+		for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
+		_unit addItemToVest "rhs_200rnd_556x45_B_SAW";
+		_unit addBackpack "usm_pack_200rnd_556_bandoliers";
+		for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_200rnd_556x45_M_SAW";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "16Rnd_9x21_Mag";};
+		_unit addHeadgear "H_Watchcap_khk";
+		_unit addGoggles "rhs_googles_orange";
+
+		_unit addWeapon "rhs_weap_m249_pip";
+		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		_unit addWeapon "hgun_P07_F";
+
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "tac-sn":
+	{
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
+
+		_unit forceAddUniform "Cre8ive_CU_Uniform_Polo_Khaki";
+		_unit addItemToUniform "ACRE_PRC152";
+		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addItemToUniform "ACE_bloodIV_250";
+		_unit addVest "rhsusf_mbav_light";
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 6 do {_unit addItemToVest "7Rnd_408_Mag";};
+		_unit addBackpack "B_FieldPack_cbr";
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "7Rnd_408_Mag";};
+		for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_7Rnd_408_305gr_Mag";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_m67";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "UK3CB_BAF_SmokeShell";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "UK3CB_BAF_SmokeShellBlue";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "Chemlight_blue";};
+		_unit addHeadgear "SOUP_Boonie_CAN_ARID";
+		_unit addGoggles "rhs_googles_orange";
+
+		_unit addWeapon "srifle_LRR_camo_F";
+		_unit addWeapon "hgun_P07_F";
+		_unit addHandgunItem "hlc_muzzle_Evo9";
+
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
+	};
+	
+	case "tac-mk":
+	{
+		removeAllWeapons _unit;
+		removeAllItems _unit;
+		removeAllAssignedItems _unit;
+		removeUniform _unit;
+		removeVest _unit;
+		removeBackpack _unit;
+		removeHeadgear _unit;
+		removeGoggles _unit;
+
+		_unit forceAddUniform "Cre8ive_CU_Uniform_Polo_Khaki";
+		_unit addItemToUniform "ACRE_PRC152";
+		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
+		_unit addItemToUniform "ACE_bloodIV_250";
+		_unit addVest "rhsusf_mbav_light";
+		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
+		for "_i" from 1 to 3 do {_unit addItemToVest "16Rnd_9x21_Mag";};
+		for "_i" from 1 to 4 do {_unit addItemToVest "rhsusf_20Rnd_762x51_m993_Mag";};
+		_unit addBackpack "B_FieldPack_cbr";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_20Rnd_762x51_m62_Mag";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "rhsusf_20Rnd_762x51_m993_Mag";};
+		_unit addItemToBackpack "16Rnd_9x21_Mag";
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_m67";};
+		for "_i" from 1 to 4 do {_unit addItemToBackpack "UK3CB_BAF_SmokeShell";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "UK3CB_BAF_SmokeShellRed";};
+		for "_i" from 1 to 2 do {_unit addItemToBackpack "Chemlight_green";};
+		_unit addHeadgear "SOUP_Boonie_CAN_ARID";
+		_unit addGoggles "rhs_googles_orange";
+
+		_unit addWeapon "rhs_weap_m14ebrri";
+		_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
+		_unit addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+		_unit addWeapon "hgun_P07_F";
+		_unit addHandgunItem "hlc_muzzle_Evo9";
+
+		_unit linkItem "ItemMap";
+		_unit linkItem "ItemCompass";
+		_unit linkItem "ItemWatch";
+		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
+	};
+
 	case "dc":
 	{
 		_unit addmagazines [_glriflemag,7];

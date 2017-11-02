@@ -452,6 +452,7 @@ switch (_typeofUnit) do
 
 		_unit addWeapon "rhs_weap_m4a1_blockII_d";
 		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		_unit addPrimaryWeaponItem "sma_spitfire_03_rds_low_ard_black";
 		_unit addWeapon "rhs_weap_rpg7";
 		_unit addSecondaryWeaponItem "rhs_acc_pgo7v3";
 
@@ -492,6 +493,7 @@ switch (_typeofUnit) do
 
 		_unit addWeapon "rhs_weap_m4a1_blockII_d";
 		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		_unit addPrimaryWeaponItem "sma_spitfire_03_rds_low_ard_black";
 		_unit addWeapon "hgun_P07_F";
 
 		_unit linkItem "ItemMap";
@@ -536,6 +538,7 @@ switch (_typeofUnit) do
 		_unit addWeapon "rhs_weap_m4a1_blockII_M203_d";
 		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
 		_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
+		_unit addPrimaryWeaponItem "sma_spitfire_03_rds_low_ard_black";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "hlc_muzzle_Evo9";
 		_unit addWeapon "Laserdesignator";
@@ -577,6 +580,7 @@ switch (_typeofUnit) do
 
 		_unit addWeapon "rhs_weap_m249_pip";
 		_unit addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+		this addPrimaryWeaponItem "sma_spitfire_03_rds_low_ard_black";
 		_unit addWeapon "hgun_P07_F";
 
 		_unit linkItem "ItemMap";
@@ -615,6 +619,7 @@ switch (_typeofUnit) do
 		_unit addGoggles "rhs_googles_orange";
 
 		_unit addWeapon "srifle_LRR_camo_F";
+		_unit addPrimaryWeaponItem "RKSL_optic_PMII_312_sunshade_des";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "hlc_muzzle_Evo9";
 
@@ -658,6 +663,7 @@ switch (_typeofUnit) do
 		_unit addWeapon "rhs_weap_m14ebrri";
 		_unit addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 		_unit addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+		_unit addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
 		_unit addWeapon "hgun_P07_F";
 		_unit addHandgunItem "hlc_muzzle_Evo9";
 
@@ -1315,12 +1321,11 @@ switch (_typeofUnit) do
 		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
 		for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_morphine";};
-		_unit addItemToUniform "hlc_30Rnd_762x39_b_ak";
 		_unit addVest "V_BandollierB_rgr";
 		_unit addItemToVest "SmokeShell";
 		for "_i" from 1 to 5 do {_unit addItemToVest "hlc_30Rnd_762x39_b_ak";};
 		_unit addItemToVest "rhs_mag_rgo";
-		_unit addBackpack "B_LegStrapBag_black_F";
+		_unit addBackpack "B_TacticalPack_blk";
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
 		_unit addItemToBackpack "hlc_30Rnd_762x39_t_ak";
 
@@ -1331,12 +1336,14 @@ switch (_typeofUnit) do
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
 		_unit linkItem "ItemRadio";
-		
+		_unit linkItem "ItemGPS";
+
 	};
 	
 // LOADOUT: LIGHT ANTITANK
 	case "lat":
 	{
+
 		removeAllWeapons _unit;
 		removeAllItems _unit;
 		removeAllAssignedItems _unit;
@@ -1355,18 +1362,20 @@ switch (_typeofUnit) do
 		_unit addItemToVest "SmokeShell";
 		for "_i" from 1 to 5 do {_unit addItemToVest "hlc_30Rnd_762x39_b_ak";};
 		_unit addItemToVest "rhs_mag_rgo";
-		_unit addBackpack "B_LegStrapBag_black_F";
+		_unit addBackpack "B_TacticalPack_blk";
 		for "_i" from 1 to 5 do {_unit addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
 		_unit addItemToBackpack "hlc_30Rnd_762x39_t_ak";
 
 		_unit addWeapon "rhs_weap_akmn";
 		_unit addPrimaryWeaponItem "rhs_acc_dtkakm";
 		_unit addWeapon "rhs_weap_rpg26";
+		_unit addWeapon "Binocular";
 
 		_unit linkItem "ItemMap";
 		_unit linkItem "ItemCompass";
 		_unit linkItem "ItemWatch";
 		_unit linkItem "ItemRadio";
+		_unit linkItem "ItemGPS";
 
 	};
 
@@ -1579,7 +1588,7 @@ if !(_isMan) exitWith {};
 // ====================================================================================
 
 // Handle weapon attachments
-#include "f_assignGear_attachments.sqf";
+// #include "f_assignGear_attachments.sqf";
 
 // ====================================================================================
 

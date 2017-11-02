@@ -72,9 +72,9 @@ disabledAI = true;
 // CA Remove corpse manager
 
 corpseManagerMode = 1;
-corpseLimit = 15;
-corpseRemovalMinTime = 60; //seconds
-corpseRemovalMaxTime = 300; //seconds
+corpseLimit = 25;
+corpseRemovalMinTime = 300; //seconds
+corpseRemovalMaxTime = 480; //seconds
 
 // ============================================================================================
 
@@ -299,7 +299,7 @@ class Params
 	{
 		title = "Cache AI outside distance (m)";
 		values[] = {0,600,800,1000,1500,2000};
-		default = 0;
+		default = 1000;
 		code = "f_param_caching = %1";
 	};
 
@@ -538,6 +538,14 @@ class CfgFunctions
 			class addSvbiedHandlers
 			{
 				file = "bub\bub_fnc_addSvbiedHandlers.sqf";
+			}
+			class chaseADude
+			{
+				file = "bub\bub_fnc_chaseADude.sqf";
+			}
+			class theFinalCountdown
+			{
+				file = "bub\bub_fnc_theFinalCountdown.sqf";
 			}
 		}
 	}

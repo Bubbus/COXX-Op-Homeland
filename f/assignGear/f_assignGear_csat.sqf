@@ -1047,7 +1047,7 @@ if !(_isMan) exitWith {};
 // ====================================================================================
 
 // Handle weapon attachments
-#include "f_assignGear_attachments.sqf";
+// #include "f_assignGear_attachments.sqf";
 
 // ====================================================================================
 

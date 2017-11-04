@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2837;
+		nextID=2842;
 	};
 	class MarkerIDProvider
 	{
-		nextID=75;
+		nextID=80;
 	};
 	class Camera
 	{
-		pos[]={1849.4843,548.75464,5656.1641};
-		dir[]={0.56984764,-0.48201534,-0.66558498};
-		up[]={0.31349194,0.87615812,-0.3661609};
-		aside[]={-0.75964803,-1.9022264e-007,-0.65038425};
+		pos[]={5002.1943,185.34088,6060.5215};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -507,7 +507,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=510;
+		items=513;
 		class Item0
 		{
 			dataType="Logic";
@@ -15622,8 +15622,8 @@ class Mission
 			position[]={5047.9141,199.90045,5413.1138};
 			class Attributes
 			{
-				sizeA=350;
-				sizeB=350;
+				sizeA=300;
+				sizeB=300;
 				activationBy="WEST";
 			};
 			id=2007;
@@ -25110,18 +25110,18 @@ class Mission
 		class Item355
 		{
 			dataType="Marker";
-			position[]={5259.8564,0.51806641,6145.896};
+			position[]={5259.856,0,6145.896};
 			name="feruz_area";
 			markerType="ELLIPSE";
 			type="ellipse";
-			colorName="ColorRed";
+			colorName="ColorEAST";
 			alpha=0.20218126;
 			fillName="SolidBorder";
 			a=200;
 			b=200;
 			drawBorder=1;
 			id=2505;
-			atlOffset=-143.28104;
+			atlOffset=-143.79907;
 		};
 		class Item356
 		{
@@ -28913,7 +28913,7 @@ class Mission
 			name="marker_33";
 			text="ISIT Observation Post";
 			type="mil_objective";
-			colorName="ColorGUER";
+			colorName="ColorEAST";
 			id=2753;
 			atlOffset=-514.1673;
 		};
@@ -29047,18 +29047,18 @@ class Mission
 		class Item466
 		{
 			dataType="Marker";
-			position[]={5065.0518,0,6845.293};
+			position[]={5055.2129,0,6880.9604};
 			name="marker_45";
 			text="A-TEAM Assault Outpost";
 			type="mil_objective";
 			colorName="ColorGUER";
 			id=2767;
-			atlOffset=-300.57999;
+			atlOffset=-301.07999;
 		};
 		class Item467
 		{
 			dataType="Marker";
-			position[]={5020.4712,0,6899.6982};
+			position[]={5023.9194,0,6914.4834};
 			name="marker_46";
 			text="A-TEAM Retrieve Documents";
 			type="mil_pickup";
@@ -30188,115 +30188,6 @@ class Mission
 		};
 		class Item505
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5004.2017,148.95297,6092.4585};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=2831;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male04ENG";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=2830;
-		};
-		class Item506
-		{
 			dataType="Trigger";
 			position[]={5921.291,123.05415,7282.3271};
 			class Attributes
@@ -30310,7 +30201,7 @@ class Mission
 			id=2832;
 			type="EmptyDetectorArea10x10";
 		};
-		class Item507
+		class Item506
 		{
 			dataType="Marker";
 			position[]={6103.0894,296.97144,5811.6968};
@@ -30319,7 +30210,7 @@ class Mission
 			id=2833;
 			atlOffset=-2.8450623;
 		};
-		class Item508
+		class Item507
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30334,7 +30225,7 @@ class Mission
 			type="UMI_Item_Coke_Pile_01";
 			atlOffset=0.25549316;
 		};
-		class Item509
+		class Item508
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30349,6 +30240,50 @@ class Mission
 			};
 			id=2836;
 			type="Crater";
+		};
+		class Item509
+		{
+			dataType="Marker";
+			position[]={2852.813,0,6660.7241};
+			name="marker_78";
+			text="A-TEAM Assault Outpost";
+			type="mil_arrow2";
+			colorName="ColorGUER";
+			angle=55.338997;
+			id=2837;
+			atlOffset=-506.00037;
+		};
+		class Item510
+		{
+			dataType="Marker";
+			position[]={2994.5784,-0.53759766,6770.6641};
+			name="marker_79";
+			text="A-TEAM Search + Eliminate Commander";
+			type="mil_unknown";
+			colorName="ColorGUER";
+			id=2838;
+			atlOffset=-515.67596;
+		};
+		class Item511
+		{
+			dataType="Marker";
+			position[]={5005.0698,301.14987,6904.1777};
+			name="marker_80";
+			text="A-TEAM Search + Eliminate Commander";
+			type="mil_unknown";
+			colorName="ColorGUER";
+			id=2839;
+		};
+		class Item512
+		{
+			dataType="Marker";
+			position[]={3609.8101,67.925781,4406.8174};
+			name="marker_81";
+			text="ISIT Held City";
+			type="mil_flag";
+			colorName="ColorEAST";
+			id=2841;
+			atlOffset=-200.59946;
 		};
 	};
 	class Connections

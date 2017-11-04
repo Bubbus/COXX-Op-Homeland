@@ -94,18 +94,18 @@
 };
 
 
-// Maintain 1 helicopter at all times.
+// Maintain 2 helicopters at all times.
 [] spawn 
 {
 	// Give em a chance tho.
-	sleep 240;
+	sleep 120;
 
 	_vehicleDefs = 
 	[
 		[["pilot","pilot"],"taki_heli_1","feruz_area","LOP_IA_Mi24V_AT","ind_f",independent],
-		[["pilot","pilot","crew","crew","crew","crew"],"taki_heli_1","feruz_area","RHS_UH1Y_d","ind_f",independent],
-		
-		[["pilot","pilot","crew","crew","crew","crew"],"taki_heli_1","feruz_area","RHS_Mi8mt_vdv","ind_f",independent]
+		[["pilot","pilot","crew","crew","crew","crew"],"taki_heli_2","feruz_area","RHS_UH1Y_d","ind_f",independent],
+		[["pilot","pilot","crew","crew","crew","crew"],"taki_heli_1","feruz_area","RHS_Mi8mt_vdv","ind_f",independent],
+		[["pilot","pilot","crew","crew","crew","crew"],"taki_heli_2","feruz_area","RHS_Mi8mt_vdv","ind_f",independent]
 	];
 	
 	_groupsActive = [];	
@@ -119,7 +119,7 @@
 
 			waitUntil 
 			{
-				sleep 4;
+				sleep 6;
 			
 				_newActive = [];
 				
@@ -134,7 +134,7 @@
 				
 				_groupsActive = _newActive;
 				
-				count _groupsActive < 1;
+				count _groupsActive < 2;
 			};
 			
 		} forEach _vehicleDefs;
@@ -152,7 +152,7 @@
 	
 		_list = (position taki_veh_area) nearEntities [["Man", "Car", "Tank"], 200];
 		
-		{ _x doMove (getPos feruz_finaltrigger); hint format ["MOVE IT %1", _x]; } forEach _list;
+		{ _x doMove (getPos feruz_finaltrigger); } forEach _list;
 		
 		sleep 15;
 	

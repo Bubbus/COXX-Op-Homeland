@@ -20,7 +20,7 @@ _goTo = nullObj;
 	while {alive _chaser2} do 
 	{ 
 		(driver _chaser2) doMove (getPos _goTo2); 
-		if ((position _goTo2) distance (position _chaser2) < 50) then 
+		if ((position _goTo2) distance (position _chaser2) < 40) then 
 		{
 			_chaser2 setDamage 1;
 		}; 

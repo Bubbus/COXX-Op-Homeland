@@ -151,8 +151,6 @@ hintsilent 'Click on the location in the map';"">Execute Safe End</execute><br/>
 
 |- <execute expression="" onMapSingleClick '';
 hintsilent 'Map Click Canceled!';"">Cancel Map Click</execute><br/>
-
-|- <execute expression=""{if (side _x == east) then {_x setDamage 1;};} forEach allUnits;"">Kill all OPFOR</execute><br/>
 ";
 
 

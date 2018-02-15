@@ -8,17 +8,17 @@
 // NOTE TO CHANGE THE MARKER TEXT, IT IS NOW DONE INGAME BY EDITING THE GROUPS "CALLSIGN" (Or Groupid in game terms)
 // TO CHANGE THE NAME OF THE MEDICS, IT IS DONE BELOW AS "NORMAL"
 
-["GrpNATO_CO",_hq, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+["GrpNATO_CO",_hq, "COMMAND", "ColorYellow"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_COV",_ifv, "COV", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
-["GrpNATO_ASL",_hq, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
-["GrpNATO_A1",_ft, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
-["GrpNATO_A2",_ft, "A2", "ColorRed"] spawn f_fnc_localGroupMarker;
+["GrpNATO_ASL",_hq, "ALPHA-SL", "ColorRed"] spawn f_fnc_localGroupMarker;
+["GrpNATO_A1",_ft, "ALPHA-1", "ColorRed"] spawn f_fnc_localGroupMarker;
+["GrpNATO_A2",_ft, "ALPHA-2", "ColorRed"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_AV",_ifv, "AV", "ColorRed"] spawn f_fnc_localGroupMarker;
 
-["GrpNATO_BSL",_hq, "BSL", "ColorBlue"] spawn f_fnc_localGroupMarker;
-["GrpNATO_B1",_ft, "B1", "ColorBlue"] spawn f_fnc_localGroupMarker;
-["GrpNATO_B2",_ft, "B2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+["GrpNATO_BSL",_hq, "BRAVO-SL", "ColorBlue"] spawn f_fnc_localGroupMarker;
+["GrpNATO_B1",_ft, "BRAVO-1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+["GrpNATO_B2",_ft, "BRAVO-2", "ColorBlue"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_BV",_ifv, "BV", "ColorBlue"] spawn f_fnc_localGroupMarker;
 
 ["GrpNATO_CSL",_hq, "CSL", "ColorGreen"] spawn f_fnc_localGroupMarker;
@@ -35,7 +35,7 @@
 ["GrpNATO_MTR1",_mor, "MTR1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_MSAM1",_lau, "MSAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_HSAM1",_lau, "HSAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
-["GrpNATO_ST1",_rec, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+["GrpNATO_ST1",_rec, "A-TEAM", "ColorOrange"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_DT1",_rec, "DT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 ["GrpNATO_ENG1",_eng, "ENG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 

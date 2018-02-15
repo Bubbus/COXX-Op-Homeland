@@ -439,7 +439,7 @@ switch (_typeofUnit) do
 		removeGoggles _unit;
 
 		_unit forceAddUniform "Cre8ive_CU_Uniform_Polo_Grey";
-		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addVest "rhsusf_mbav_medic";
 		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
@@ -475,7 +475,7 @@ switch (_typeofUnit) do
 		removeGoggles _unit;
 
 		_unit forceAddUniform "Cre8ive_CU_Uniform_TShirt_Tan_Grey";
-		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 12 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addVest "rhsusf_mbav_medic";
 		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
@@ -516,8 +516,8 @@ switch (_typeofUnit) do
 
 		_unit forceAddUniform "Cre8ive_CU_Uniform_TShirt_Tan_Grey";
 		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
-		_unit addItemToUniform "ACE_bloodIV_250";
 		_unit addVest "rhsusf_mbav_grenadier";
 		for "_i" from 1 to 12 do {_unit addItemToVest "ACE_morphine";};
 		for "_i" from 1 to 11 do {_unit addItemToVest "hlc_30rnd_556x45_EPR";};
@@ -562,7 +562,7 @@ switch (_typeofUnit) do
 		removeGoggles _unit;
 
 		_unit forceAddUniform "Cre8ive_CU_Uniform_TShirt_Tan_Blue";
-		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_bloodIV_250";
 		_unit addVest "rhsusf_mbav_mg";
@@ -602,7 +602,7 @@ switch (_typeofUnit) do
 		removeGoggles _unit;
 
 		_unit forceAddUniform "Cre8ive_CU_Uniform_Polo_Khaki";
-		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_bloodIV_250";
 		_unit addVest "rhsusf_mbav_light";
@@ -642,7 +642,7 @@ switch (_typeofUnit) do
 		removeGoggles _unit;
 
 		_unit forceAddUniform "Cre8ive_CU_Uniform_Polo_Khaki";
-		_unit addItemToUniform "ACRE_PRC152";
+		_unit addItemToUniform "ACRE_PRC343";
 		for "_i" from 1 to 9 do {_unit addItemToUniform "ACE_fieldDressing";};
 		_unit addItemToUniform "ACE_bloodIV_250";
 		_unit addVest "rhsusf_mbav_light";
@@ -1338,6 +1338,13 @@ switch (_typeofUnit) do
 		_unit linkItem "ItemRadio";
 		_unit linkItem "ItemGPS";
 
+	};
+	
+	
+	
+	case "engi":
+	{
+		_unit setUnitLoadout [["rhs_weap_akms","rhs_acc_dtkakm","","",["rhs_30Rnd_762x39mm",30],[],""],[],["hgun_Rook40_F","","","",["16Rnd_9x21_Mag",17],[],""],["LOP_U_PESH_Fatigue_01",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",10],["ACE_epinephrine",1],["ACE_morphine",10],["rhs_mag_rgo",1,1]]],["V_BandollierB_oli",[["rhs_30Rnd_762x39mm_89",5,30],["SmokeShell",2,1],["SmokeShellPurple",1,1]]],["SOUP_Assault_Pack_M81",[["ToolKit",1],["ACE_SpraypaintBlue",1],["ACE_EntrenchingTool",1]]],"H_Cap_red","",[],["ItemMap","","","ItemCompass","ItemWatch",""]];
 	};
 	
 // LOADOUT: LIGHT ANTITANK

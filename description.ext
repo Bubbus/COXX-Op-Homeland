@@ -335,7 +335,7 @@ class CfgDebriefing
 	class End2
 	{
 		title = "It's a wipeout!";
-		subtitle = "ISIT loves you";
+		subtitle = "ISIT the end?  Yes.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";

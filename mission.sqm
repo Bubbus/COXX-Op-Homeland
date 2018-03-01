@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1230.0981,463.06177,5911.6865};
-		dir[]={0.71298468,-0.47555074,-0.51553309};
-		up[]={0.38549826,0.87965065,-0.27873501};
-		aside[]={-0.58596945,1.9975705e-006,-0.81041276};
+		pos[]={5256.98,317.64072,6057.7056};
+		dir[]={0.28885329,-0.77468055,0.56254387};
+		up[]={0.3538579,0.63235158,0.68914235};
+		aside[]={0.88958877,-2.7345959e-007,-0.45678234};
 	};
 };
 binarizationWanted=0;
@@ -101,6 +101,7 @@ addons[]=
 	"A3_Structures_F_EPB_Civ_Graffiti",
 	"A3_Structures_F_Mil_Flags",
 	"hlcweapons_falpocalypse",
+	"hlcweapons_core",
 	"po_factions_eu",
 	"acre_sys_prc152"
 };
@@ -108,7 +109,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=66;
+		items=67;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -527,11 +528,17 @@ class AddonsMetaData
 		};
 		class Item64
 		{
+			className="hlcweapons_core";
+			name="hlcweapons_core";
+			author="toadie";
+		};
+		class Item65
+		{
 			className="po_factions_eu";
 			name="po_factions_eu";
 			author="Leight, Keeway";
 		};
-		class Item65
+		class Item66
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
@@ -558,6 +565,149 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_weather_windsimulation";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="EnableDebugConsole";
 			expression="true";
 			class Value
@@ -575,7 +725,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -5819,7 +5969,7 @@ class Mission
 						rank="CORPORAL";
 						init="call{[""tac-sl"",this] call f_fnc_assignGear; }";
 						name="UnitNATO_ST1_SP";
-						description="Squad Leader";
+						description="A-TEAM Squad Leader";
 						isPlayable=1;
 					};
 					id=295;
@@ -5921,7 +6071,7 @@ class Mission
 						skill=0.60000002;
 						init="call{[""tac-ar"",this] call f_fnc_assignGear; }";
 						name="UnitNATO_ST1_SN";
-						description="Automatic Rifleman";
+						description="A-TEAM Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=296;
@@ -6023,7 +6173,7 @@ class Mission
 						skill=0.60000002;
 						init="call{[""tac-med"",this] call f_fnc_assignGear; }";
 						name="UnitNATO_ST1_SN_1";
-						description="Medic";
+						description="A-TEAM Medic";
 						isPlayable=1;
 					};
 					id=1464;
@@ -6145,7 +6295,7 @@ class Mission
 						rank="CORPORAL";
 						init="call{[""tac-mk"",this] call f_fnc_assignGear; }";
 						name="UnitNATO_ST1_SP_1";
-						description="Marksman";
+						description="A-TEAM Marksman";
 						isPlayable=1;
 					};
 					id=1463;
@@ -6248,7 +6398,7 @@ class Mission
 						rank="CORPORAL";
 						init="call{[""tac-sn"",this] call f_fnc_assignGear; }";
 						name="UnitNATO_ST1_SP_2";
-						description="Sniper";
+						description="A-TEAM Sniper";
 						isPlayable=1;
 					};
 					id=1955;
@@ -6350,7 +6500,7 @@ class Mission
 						skill=0.60000002;
 						init="call{[""tac-at"",this] call f_fnc_assignGear; }";
 						name="UnitNATO_ST1_SN_2";
-						description="Anti Tank";
+						description="A-TEAM Anti Tank";
 						isPlayable=1;
 					};
 					id=1957;
@@ -7064,7 +7214,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5318.0864,165.5923,6029.4658};
-				angles[]={0.91961926,0,-0};
+				angles[]={0.91961926,0,0};
 			};
 			side="Empty";
 			flags=1;
@@ -7178,7 +7328,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5317.9971,166.34628,6029.6558};
-				angles[]={5.5756893,0,-0};
+				angles[]={5.5756893,0,0};
 			};
 			side="Empty";
 			class Attributes
@@ -7427,7 +7577,7 @@ class Mission
 			};
 			id=1553;
 			type="Land_Plank_01_4m_F";
-			atlOffset=1.4277039;
+			atlOffset=1.4275818;
 		};
 		class Item62
 		{
@@ -8510,12 +8660,13 @@ class Mission
 						angles[]={0,3.5091975,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 					};
 					id=1725;
 					type="LOP_Tak_Civ_Random";
+					atlOffset=0.25909424;
 				};
 				class Item1
 				{
@@ -8526,12 +8677,13 @@ class Mission
 						angles[]={0,4.432776,0};
 					};
 					side="Civilian";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 					};
 					id=1719;
 					type="LOP_Tak_Civ_Random";
+					atlOffset=1.4543152;
 				};
 				class Item2
 				{
@@ -8548,13 +8700,14 @@ class Mission
 					};
 					id=1723;
 					type="LOP_Tak_Civ_Random";
-					atlOffset=0.92224121;
+					atlOffset=2.2197876;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1727;
+			atlOffset=0.25909424;
 		};
 		class Item111
 		{
@@ -8594,6 +8747,7 @@ class Mission
 					};
 					id=1729;
 					type="LOP_Tak_Civ_Random";
+					atlOffset=0.15390015;
 				};
 				class Item2
 				{
@@ -8698,12 +8852,13 @@ class Mission
 						angles[]={0,5.8392258,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 					};
 					id=1747;
 					type="LOP_Tak_Civ_Random";
+					atlOffset=0.38375854;
 				};
 				class Item1
 				{
@@ -8746,18 +8901,20 @@ class Mission
 						angles[]={0,2.7042735,0};
 					};
 					side="Civilian";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 					};
 					id=1749;
 					type="LOP_Tak_Civ_Random";
+					atlOffset=0.78596497;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1746;
+			atlOffset=0.38375854;
 		};
 		class Item114
 		{
@@ -9216,7 +9373,7 @@ class Mission
 						angles[]={6.2056885,4.8870158,6.2614498};
 					};
 					side="East";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9229,7 +9386,7 @@ class Mission
 					};
 					id=428;
 					type="O_Soldier_AR_F";
-					atlOffset=0.064819336;
+					atlOffset=2.7639771;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9301,7 +9458,6 @@ class Mission
 						angles[]={6.2809477,5.3378105,0.087973908};
 					};
 					side="East";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -9314,6 +9470,7 @@ class Mission
 					};
 					id=429;
 					type="O_Soldier_AR_F";
+					atlOffset=2.7526855;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9381,7 +9538,7 @@ class Mission
 			{
 			};
 			id=1771;
-			atlOffset=0.064819336;
+			atlOffset=2.7639771;
 		};
 		class Item117
 		{
@@ -12233,6 +12390,7 @@ class Mission
 			};
 			id=1873;
 			type="TapeSign_F";
+			atlOffset=0.15206909;
 		};
 		class Item155
 		{
@@ -12521,7 +12679,7 @@ class Mission
 			};
 			id=1886;
 			type="UK3CB_BAF_SupplyCrate_Ammo";
-			atlOffset=0.037002563;
+			atlOffset=0.036193848;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12580,7 +12738,7 @@ class Mission
 			};
 			id=1887;
 			type="UK3CB_BAF_SupplyCrate_Ammo";
-			atlOffset=0.14501953;
+			atlOffset=0.14408875;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12620,7 +12778,7 @@ class Mission
 			};
 			id=1888;
 			type="UK3CB_BAF_SupplyCrate_Ammo";
-			atlOffset=0.22702026;
+			atlOffset=0.22636414;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13412,7 +13570,7 @@ class Mission
 					};
 					id=431;
 					type="O_Soldier_F";
-					atlOffset=0.087371826;
+					atlOffset=0.087341309;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13485,14 +13643,14 @@ class Mission
 					};
 					showWP="NEVER";
 					id=1916;
-					atlOffset=0.00025939941;
+					atlOffset=0.00022888184;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1915;
-			atlOffset=0.087371826;
+			atlOffset=0.087341309;
 		};
 		class Item182
 		{
@@ -13522,7 +13680,7 @@ class Mission
 					};
 					id=427;
 					type="O_Soldier_TL_F";
-					atlOffset=0.00047302246;
+					atlOffset=0.00044250488;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13595,14 +13753,14 @@ class Mission
 					};
 					showWP="NEVER";
 					id=1918;
-					atlOffset=0.00077819824;
+					atlOffset=0.00074768066;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1917;
-			atlOffset=0.00047302246;
+			atlOffset=0.00044250488;
 		};
 		class Item183
 		{
@@ -14813,9 +14971,12 @@ class Mission
 			position[]={5047.9141,199.90045,5413.1138};
 			class Attributes
 			{
+				condition="call{this}";
+				onActivation="call{[[""ftl"",""shotgun"",""shit2"",""donkey"",""shit1""],""kaka_outskirts_1"",100,""opf_f"",east] spawn ca_fnc_spawnpatrol;" \n "sleep 4;" \n "[[""ftl"",""lmg"",""shit2"",""donkey"",""ar""],""kaka_outskirts_2"",100,""opf_f"",east] spawn ca_fnc_spawnpatrol;}";
 				sizeA=300;
 				sizeB=300;
 				activationBy="WEST";
+				isServerOnly=1;
 			};
 			id=2007;
 			type="EmptyDetectorAreaR250";
@@ -24972,7 +25133,7 @@ class Mission
 			};
 			id=2613;
 			type="rhs_7ya37_1_single";
-			atlOffset=0.484375;
+			atlOffset=0.69198608;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27726,7 +27887,7 @@ class Mission
 			};
 			id=2745;
 			type="rhsgref_ins_uaz_spg9";
-			atlOffset=0.39501953;
+			atlOffset=0.34735107;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28430,7 +28591,7 @@ class Mission
 			fillName="SolidFull";
 			a=10;
 			b=300;
-			angle=112.76706;
+			angle=112.76703;
 			id=2795;
 			atlOffset=-373.78818;
 		};
@@ -28734,7 +28895,7 @@ class Mission
 			text="A-TEAM Assault Outpost";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=55.338943;
+			angle=55.338932;
 			id=2837;
 			atlOffset=-506.00037;
 		};
@@ -31955,6 +32116,7 @@ class Mission
 					{
 						init="call{[this, true, true] call ca_fnc_registerZeusPlayer;}";
 						name="zeus_ply";
+						description="Zeus Player";
 						isPlayer=1;
 						class Inventory
 						{
@@ -32838,7 +33000,7 @@ class Mission
 			};
 			id=3018;
 			type="UK3CB_BAF_SupplyCrate_Ammo";
-			atlOffset=0.16499329;
+			atlOffset=0.16419983;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33851,7 +34013,7 @@ class Mission
 			position[]={1558.996,271.09,5821.8989};
 			name="zeus_default";
 			type="Empty";
-			angle=227.12126;
+			angle=227.12122;
 			id=3041;
 			atlOffset=0.0002746582;
 		};

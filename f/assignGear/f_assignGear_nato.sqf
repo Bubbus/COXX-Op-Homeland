@@ -380,6 +380,12 @@ switch (_typeofUnit) do
 
 // ====================================================================================
 
+
+	case "zeus":
+	{
+		_unit setUnitLoadout [["hlc_rifle_FAL5000","","","",["hlc_20Rnd_762x51_B_fal",20],[],""],[],["hgun_Rook40_F","","","",["16Rnd_9x21_Mag",17],[],""],["LOP_U_PESH_Fatigue_01",[["ACRE_PRC343",1],["ACE_bloodIV_250",1],["ACE_fieldDressing",10],["ACE_epinephrine",1],["ACE_morphine",10],["ACRE_PRC152",1]]],["LOP_V_6B23_Rifleman_M81",[["16Rnd_9x21_Mag",3,17],["hlc_20Rnd_762x51_B_fal",3,20],["rhs_mag_rgo",1,1],["SmokeShell",4,1]]],["SOUP_Assault_Pack_M81",[["hlc_20Rnd_762x51_B_fal",7,20],["rhs_mag_rgo",1,1],["SmokeShell",1,1],["SmokeShellBlue",1,1],["SmokeShellGreen",1,1],["SmokeShellPurple",1,1]]],"LOP_H_Beanie_m81","",[],["ItemMap","","","ItemCompass","ItemWatch",""]];
+	};
+
 // LOADOUT: COMMANDER
 	case "co":
 	{

@@ -25,10 +25,10 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the F3_CA Mission Development Framework";
-author = "*** Insert mission author name here. ***";
-loadScreen = "ca_logo_large.jpg";
+onLoadName = "Operation Homeland";
+onLoadMission = "ISIT?  More like WASIT am I right boys";
+author = "Bubbus";
+loadScreen = "ca_logo_large2.jpg";
 
 // ============================================================================================
 
@@ -72,9 +72,9 @@ disabledAI = true;
 // CA Remove corpse manager
 
 corpseManagerMode = 1;
-corpseLimit = 15;
-corpseRemovalMinTime = 60; //seconds
-corpseRemovalMaxTime = 300; //seconds
+corpseLimit = 25;
+corpseRemovalMinTime = 300; //seconds
+corpseRemovalMaxTime = 480; //seconds
 
 // ============================================================================================
 // F3 - Start of Notifications block.
@@ -164,8 +164,8 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
-		subtitle = "";
+		title = "Escaped from Feruz Abad!";
+		subtitle = "Good job not dying";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -174,8 +174,8 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
-		subtitle = "";
+		title = "It's a wipeout!";
+		subtitle = "ISIT the end?  Yes.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -184,8 +184,8 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
-		subtitle = "";
+		title = "Mission complete!";
+		subtitle = "Good job doing the thing";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -194,8 +194,8 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
-		subtitle = "";
+		title = "Mission FAILED";
+		subtitle = "How could you do this";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";

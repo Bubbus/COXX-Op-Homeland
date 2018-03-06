@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2348.0002,232.88809,5284.0449};
-		dir[]={-0.11729339,-0.77969241,-0.61528265};
-		up[]={-0.14601761,0.62612814,-0.76594871};
-		aside[]={-0.98240763,-2.917368e-007,0.18728052};
+		pos[]={1854.9911,279.81619,3907.4714};
+		dir[]={0.81013185,-0.22383422,0.54186457};
+		up[]={0.18606108,0.97462451,0.12444871};
+		aside[]={0.55596894,3.259629e-008,-0.83121943};
 	};
 };
 binarizationWanted=0;
@@ -1164,7 +1164,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -1413,11 +1413,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1298.6357,305.01962,6031.7104};
+				position[]={1298.636,305.01993,6031.71};
 			};
 			id=1111;
 			type="ACE_moduleReviveSettings";
-			atlOffset=23.649628;
+			atlOffset=23.649994;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1435,7 +1435,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=-1;
+							value=1;
 						};
 					};
 				};
@@ -1473,7 +1473,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=600;
+							value=300;
 						};
 					};
 				};
@@ -19599,15 +19599,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5028.812,307.67084,6877.1797};
+				position[]={5028.812,307.6712,6877.1802};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="call{[this] call bub_fnc_addLaptopAction;}";
 			};
 			id=2093;
 			type="UMI_Item_Land_Laptop_Open_F";
-			atlOffset=0.95254517;
+			atlOffset=0.95291138;
 		};
 		class Item236
 		{
@@ -24841,7 +24842,7 @@ class Mission
 			{
 				name="feruz_finaltrigger";
 				condition="call{this}";
-				onActivation="call{dakkBoiHandle = [dakka_boi, 25, 1700] call bub_fnc_dakkaSounds;" \n "" \n "[] spawn " \n "{" \n "sleep 180;" \n "[] spawn bub_fnc_theFinalCountdown;" \n "" \n "sleep 240;" \n "terminate dakkBoiHandle;" \n "};" \n "}";
+				onActivation="call{dakkBoiHandle = [dakka_boi, 25, 2000] call bub_fnc_dakkaSounds;" \n "" \n "[] spawn " \n "{" \n "sleep 180;" \n "[] spawn bub_fnc_theFinalCountdown;" \n "" \n "sleep 240;" \n "terminate dakkBoiHandle;" \n "};" \n "}";
 				sizeA=250;
 				sizeB=250;
 				activationBy="WEST SEIZED";
@@ -29078,7 +29079,7 @@ class Mission
 			fillName="SolidFull";
 			a=10;
 			b=300;
-			angle=112.76699;
+			angle=112.76697;
 			id=2795;
 			atlOffset=-373.78818;
 		};
@@ -29308,7 +29309,7 @@ class Mission
 			{
 				name="dakka_lad";
 				condition="call{this}";
-				onActivation="call{daksHandle = [dakka_lad, 20, 1800] call bub_fnc_dakkaSounds;}";
+				onActivation="call{daksHandle = [dakka_lad, 20, 2000] call bub_fnc_dakkaSounds;}";
 				sizeA=1500;
 				sizeB=1500;
 				activationBy="ANYPLAYER";
@@ -29382,7 +29383,7 @@ class Mission
 			text="A-TEAM Assault Outpost";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=55.338913;
+			angle=55.338902;
 			id=2837;
 			atlOffset=-506.00037;
 		};
@@ -34861,7 +34862,7 @@ class Mission
 			position[]={1558.996,271.09,5821.8989};
 			name="zeus_default";
 			type="Empty";
-			angle=227.12114;
+			angle=227.12109;
 			id=3041;
 			atlOffset=0.0002746582;
 		};
